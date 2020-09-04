@@ -140,6 +140,9 @@
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{2pt}{2pt}
 
+% Setup CV subsections
+\titlespacing{\subsection}{3em}{5pt}{5pt}
+
 % Configure list
 \setlist[itemize,1]{label=\faAngleRight, nosep, leftmargin=2em}
 \setlist[itemize,2]{label=\faAngleRight, nosep, leftmargin=1.5em}
@@ -377,6 +380,9 @@
 
 % Resume part title definition
 \newcommand\sectionTitle[2]{\section{\texorpdfstring{\color{accentcolor}#2\enspace \textsc{#1}}{#1}}}
+
+% Subsection titles. Using * to avoid numbering
+\newcommand\subsectionTitle[1]{\subsection*{#1}}
 
 % Define the 'keywords' environment
 \newenvironment{keywords}{%
