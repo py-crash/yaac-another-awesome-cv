@@ -196,12 +196,14 @@
 \newcommand{\viadeoSymbol}{\faViadeo}
 \newcommand{\mobileSymbol}{\faMobile*}
 \newcommand{\githubSymbol}{\faGithub}
+\newcommand{\gitlabSymbol}{\faGitlab}
 \newcommand{\stackoverflowSymbol}{\faStackOverflow}
 \newcommand{\stackexchangeSymbol}{\faStackExchange}
 \newcommand{\mediumSymbol}{\faMedium}
 \newcommand{\bitbucketSymbol}{\faBitbucket}
 \newcommand{\twitterSymbol}{\faTwitter}
 \newcommand{\websiteSymbol}{\faLink}
+\newcommand{\skypeSymbol}{\faSkype}
 
 
 \newcommand\link[2]{\color{linkcolor}\href{#1}{#2}\color{Black} }
@@ -265,6 +267,10 @@
 % Usage: \github{<github-nick>}
 \newcommand*{\github}[1]{\sociallink{\githubSymbol}{https://www.github.com/#1}{github.com/#1}}           % Github icon + URL
 
+% Render author's gitlab (optional)
+% Usage: \gitlab{<gitlab-nick>}
+\newcommand*{\gitlab}[1]{\sociallink{\gitlabSymbol}{https://www.gitlab.com/#1}{github.com/#1}}
+
 % Render author's stackoverflow profile (optional)
 % Usage: \stackoverflow{<stackoverflow-user-id>}
 \newcommand*{\stackoverflow}[1]{\sociallink{\stackoverflowSymbol}{https://www.stackoverflow.com/u/#1}{stackoverflow.com/u/#1}}
@@ -291,11 +297,15 @@
 
 % Render a website link (optional)
 % Usage: \website{<website name>}{<website adress>}
-\newcommand*{\website}[2]{\sociallink{\websiteSymbol}{#1}{#2}}
+\newcommand*{\website}[2]{\sociallink{\websiteSymbol}{#2}{#1}}
 
 % Render author's mobile phone (optional)
 % Usage: \smartphone{<mobile phone number>}
 \newcommand*\smartphone[1]{\socialtext{\mobileSymbol}{#1}}
+
+% Render author's skype name (optional)
+% Usage: \skype{skype-nick}
+\newcommand*\skype[1]{\socialtext{\skypeSymbol}{#1}}
 
 % Render author's tagline
 \newcommand\resumetitle[1]{

@@ -104,6 +104,10 @@ Most social network have their command to render a clickable link or a simple te
 % Usage: \github{<github-nick>}
 \github{darwiin}
 
+% Render author's gitlab (optional)
+% Usage: \gitlab{<gitlab-nick>}
+\gitlab{darwiin}
+
 % Render author's stackoverflow profile (optional)
 % Usage: \stackoverflow{<stackoverflow-user-id>}
 \stackoverflow{759643}
@@ -116,9 +120,25 @@ Most social network have their command to render a clickable link or a simple te
 % Usage: \twitter{<twitter-user-name>}
 \twitter{EFF}
 
+% Render author's medium (optional)
+% Usage: \medium{<medium-nick>}
+\medium{darwiin}
+
 % Render author's email (optional)
 % Usage: \email{<email adress>}
 \email{christophe.roger@mail.com}
+
+% Render author's bitbucket (optional)
+% Usage: \bitbucket{<bitbucket-account-name>}
+\bitbucket{darwiin}
+
+% Render a website link (optional)
+% Usage: \website{<website name>}{<website adress>}
+\website{My blog}{https://example.com}
+
+% Render author's skype name (optional)
+% Usage: \skype{skype-nick}
+\skype{nick}
 ```
 
 Put these command in the `\socialinfo` wrapper. Feel free to add `\\` when you want to force a new line.
