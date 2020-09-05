@@ -268,7 +268,7 @@
 
 % Render author's gitlab (optional)
 % Usage: \gitlab{<gitlab-nick>}
-\newcommand*{\gitlab}[1]{\sociallink{\gitlabSymbol}{https://www.gitlab.com/#1}{github.com/#1}}
+\newcommand*{\gitlab}[1]{\sociallink{\gitlabSymbol}{https://www.gitlab.com/#1}{gitlab.com/#1}}
 
 % Render author's stackoverflow profile (optional)
 % Usage: \stackoverflow{<stackoverflow-user-id>}
