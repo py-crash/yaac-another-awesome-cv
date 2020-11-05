@@ -239,6 +239,10 @@ entry must be separated by the **\emptyseparator**
 \end{experiences}
 ```
 
+If you don't have any _Technology higlights_, you may use the **\experienceNoTags**
+and **\consultantexperienceNoTags** commands. They work just as their counterparts but
+receive an argument less, since no tag list is created.
+
 ### Construct the _languages_ section
 
 The _languages_ section use the **skills** environment. 
