@@ -447,6 +447,21 @@
                  & \footnotesize{\foreach \n in {#7}{\cvtag{\n}}} 	\\
   }
 
+% Render an experience in the experiences environment with out the technology
+% tag list
+% Usage:
+% \experienceNoTags
+%  {<End date>}      {<Title>}{<Enterprise>}{<Country>}
+%  {<Start date}     {
+%                      <Experience description (Could be a list)>
+%                    }
+\newcommand\experienceNoTags[6]{
+  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#5}    & \begin{minipage}[t]{\rightcolumnlength}
+  					         #6
+                   \end{minipage}										\\*
+  }
+
 % Render a consultant experience in the experiences environment
 % Usage:
 % \consultantexperience
@@ -463,6 +478,23 @@
   						        #8
                    	\end{minipage}										\\*
                  & \footnotesize{\foreach \n in {#9}{\cvtag{\n}}} 	\\
+  }
+
+% Render a consultant experience in the experiences environment without the 
+% technology tag list
+% Usage:
+% \consultantexperienceNoTags
+%  {<End date>}      {<Consultant title>}{<Consulting Enterprise>}{<Country>}
+%  {<Start date}     {<Client title>}{<Client business unit>}
+%                    {
+%                      <Experience description (Could be a list)>
+%                    }
+\newcommand\consultantexperienceNoTags[8]{
+  \textbf{#1}    & \textbf{#2, \textsc{#3}, #4}   								\\*
+  \textbf{#5}    & \emph{#6} pour \textsc{#7}                       				\\*
+  				       & \begin{minipage}[t]{\rightcolumnlength}
+  						        #8
+                   	\end{minipage}										\\*
   }
 
 % Define the empty separator macro with different spacing according to document class option 'compact'
