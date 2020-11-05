@@ -598,7 +598,7 @@
 }
 
 %% Bibliography
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} 
+\usepackage[backend=biber,style=authoryear,sorting=ydnt,maxbibnames=5,natbib=true]{biblatex} 
 
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
